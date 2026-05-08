@@ -7,26 +7,26 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Anniversary Counter - Every Moment Counts',
-  description: 'Track the time since your special day - years, months, days, and more',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  title: 'Moh & Win - Our Love Story',
+  description: 'Forever kinda vibe with you ♾️',
+  
+icons: {
+  icon: [
+    {
+      url: "/heart-light.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      url: "/heart-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      url: "/love-icon.svg",
+      type: "image/svg+xml",
+    },
+  ],
+  apple: "/apple-love-icon.png",
+},
 }
 
 export default function RootLayout({
