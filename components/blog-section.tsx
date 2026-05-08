@@ -15,44 +15,44 @@ const blogPosts = [
   {
     category: "FLORAL DESIGN",
     date: "OCT 24, 2024",
-    title: "The Secret Language of Peonies in Winter",
+    title: "ထာဝရတည်မယ့် ပုဂံအမှတ်တရ ",
     image: blog1,
-    description: "Discover the enchanting symbolism behind winter peonies and how they can transform your special day into a magical celebration.",
+    description: "ရာစုနှစ်တွေအလီလီကို ဖြတ်သန်းလာခဲ့တဲ့ ပုဂံမြေရဲ့ ခိုင်မာမှုတွေလိုပဲ တို့နှစ်ယောက်ရဲ့ အချစ်တွေကလည်း ဘယ်လိုအခက်အခဲမျိုးမှာဆို မယိုင်မလဲံ တည်ရှိနေမှာပါ ရှေးဟောင်းစေတီပုထိုးတွေကြားမှာ မင်းနဲ့အတူ လျှောက်ခဲ့ရတဲ့ခြေလှမ်းတိုင်းက ငါ့ဘဝရဲ့  တန်ဖိုအရှိဆုံး သမိုင်းကြောင်းလေးတစ်ခုပေါ့",
   },
   {
     category: "PLANNING TIPS",
     date: "OCT 18, 2024",
     title: "Bagan ရဲ့ နေဝင်ချိန်တွေထက်တောင် မင်းကို ပိုချစ်တယ်။",
     image: blog2,
-    description: "Bagan ရဲ့ နေဝင်ချိန်တွေထက်တောင် မင်းကို ပိုချစ်တယ်။",
+    description: "နေဝင်ဆည်းဆာ အလှဆုံးလို နာမည်ကြီးတဲ့ ပုဂံမြေမှာ မင်းနဲ့အတူ ထိုင်ကြည့်ခွင့်ရတာဟာ ဆုလာဘ်တစ်ခုပါပဲ။ ကောင်းကင်ယံမှာ ရွှေရောင်တွေ လွှမ်းသွားချိန်မှာ မင်းရဲ့လက်ကလေးကို ဆုပ်ကိုင်ထားရင်း... နောင်နှစ်ပေါင်းများစွာအထိ ဒီလိုပဲ အတူတူရှိနေချင်ပါတယ်လို ဆုတောင်းမိတယ်။",
   },
   {
     category: "FASHION",
     date: "OCT 12, 2024",
-    title: "Trends: Minimalist Silhouettes for 2025",
+    title: "ရှေးဟောင်းမြေက တိုနှစ်ယောက်ရဲ့ အမှတ်တရ",
     image: blog3,
-    description: "Explore the elegant simplicity of minimalist wedding fashion trends that will dominate the upcoming year.",
+    description: "သမိုင်းဆိုတာ အချိန်တွေအကြာကြီး ဖြတ်သန်းလာခဲ့တဲ့ အရာတွေကိုမှ ခေါ်တာဆိုရင်... တိုနှစ်ယောက်ရဲ့ အချစ်ကလည်း နောက်နောင်တစ်ချိန်မှာ အမှတ်တရတွေအပြည့်နဲ့ သမိုင်းတစ်ခု ဖြစ်လာမှာပါ။ ပုဂံမြေရဲ့ ဟောင်းနွမ်းနေတဲ့ အုတ်တံတိုင်းတွေက ခိုင်မာခြင်းကို ပြသနေသလိုပဲ၊ မင်းအပေါ်ထားတဲ့ ငါ့ရဲ့သံယောဇဉ်ကလည်း ဘယ်တော့မှ ပျက်ပြယ်သွားမှာမဟုတ်တဲ့ အနုပညာတစ်ခုလိုပါပဲ။ ဒီရှေးဟောင်းမြိုတော်ရဲ့ လမ်းမတွေပေါ်မှာ တိုနှစ်ယောက်ရဲ့ ခြေရာတွေကို အတူတူချန်ထားရတာဟာ ငါ့ဘဝရဲ့ အဓိပ္ပာယ်အရှိဆုံး အခိုက်အတန့်တွေထဲက တစ်ခုပေါ့",
   },
   {
     category: "LOCATIONS",
     date: "SEP 28, 2024",
-    title: "Top 5 Outdoor Venues in the Valley",
+    title: "အကြည့်ချင်းဆုံတိုင်း... ပုဂံထက် ပိုလှတာ မင်းပဲ ရှိတယ်",
     image: blog4,
-    description: "Discover breathtaking outdoor venues that offer stunning natural backdrops for your dream wedding ceremony.",
+    description: "တစ်ခါတလေကျတော့လည်း စကားလုံးတွေအများကြီး ပြောနေဖိုမလိုဘဲ... ပုဂံရဲ့ အေးချမ်းတဲ့ လေထုထဲမှာ မင်းရဲ့မျက်လုံးတွေကို ကြည့်နေရရုံနဲ့တင် အရာအားလုံးက ပြည့်စုံသွားသလိုပဲ။ ရှေးဟောင်းစေတီတွေရဲ့ အရိပ်အောက်မှာ တိုနှစ်ယောက်ရဲ့ အကြည့်တွေဆုံနေတဲ့ ဒီအခိုက်အတန့်လေးကို အချိန်တွေ ရပ်တန့်ထားလိုက်ချင်မိတယ်။ မင်းမျက်ဝန်းထဲမှာ ငါ့အတွက် အချစ်တွေအပြည့် ရှိနေသရွေ့ ငါ့ဘဝက ဘယ်တော့မှ မမှောင်နိုင်တော့ဘူး ချစ်သူ",
   },
   {
     category: "CAKES",
     date: "SEP 15, 2024",
-    title: "The Art of Edible Petals and Gold Leaf",
+    title: "ပခုံးတစ်ဖက်ရဲ့ နွေးထွေးမှု",
     image: blog5,
-    description: "Master the art of decorating wedding cakes with edible flowers and luxurious gold leaf accents.",
+    description: "ဒီလိုသမိုင်းဝင်တဲ့မြေမှာ မင်းနဲ့အတူ ဘေးချင်းယှဉ်ပြီး ရပ်နေခွင့်ရတာဟာ ကံကြမ္မာကပေးတဲ့ လက်ဆောင်တစ်ခုလို ငါယုံကြည်တယ်။ ငါ့ပုခုံးပေါ်မှာ မင်းမှီထားတဲ့ အခိုက်အတန့်တိုင်းက ငါ့အတွက်တော့ အင်အားအရှိဆုံးအချိန်တွေပေါ့။ ပုဂံမြေရဲ့ လမ်းတွေက ဘယ်လောက်ပဲ ရှည်လျားပါစေ၊ မင်းလက်ကိုတွဲပြီး အတူတူရှုခင်းကြည့်နေရသရွေ့ ငါ့ဘဝခရီးက ဘယ်တော့မှ မပင်ပန်းနိုင်တော့ဘူး။ တိုနှစ်ယောက်ရဲ့ ချစ်ခြင်းတွေကလည်း ဒီပုဂံက ဘုရားပုထိုးတွေလိုပဲ ရာစုနှစ်ပေါင်းများစွာအထိ ခိုင်မြဲနေဦးမှာပါ",
   },
   {
     category: "CATERING",
     date: "SEP 04, 2024",
-    title: "Signature Cocktails for Garden Parties",
+    title: "Ancient Views & Timeless Love",
     image: blog6,
-    description: "Create memorable signature cocktails that perfectly complement your garden party wedding theme.",
+    description: "ပုဂံရဲ့ အလှတရားက ရှေးဟောင်းအနုပညာတွေမှာ အခြေခံတယ်ဆိုရင်... ငါ့ဘဝရဲ့ အလှတရားကတော့ မင်းရှိနေခြင်းအပေါ်မှာ အခြေခံတာပါ။ ဟောင်းနွမ်းသွားခြင်းမရှိတဲ့ ဒီဘုရားပုထိုးတွေလိုပဲ တိုနှစ်ယောက်ရဲ့ အမှတ်တရတွေကလည်း အချိန်တိုင်းမှာ သစ်လွင်နေဦးမှာပဲ ချစ်သူ။",
   },
 ]
 
@@ -177,13 +177,7 @@ export function BlogSection() {
                 <p className="text-black/70 text-lg leading-relaxed mb-6">
                   {blogPosts[selectedBlog].description}
                 </p>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-[#5a6b4d] hover:bg-[#4a5b3d] text-white px-8 py-3 rounded-full font-medium transition-colors"
-                >
-                  Read Full Article
-                </motion.button>
+               
               </div>
 
               {/* Navigation */}
