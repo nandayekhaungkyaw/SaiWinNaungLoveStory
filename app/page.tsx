@@ -9,6 +9,7 @@ import { BlogSection } from "@/components/blog-section";
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Volume2, VolumeX } from "lucide-react";
+import CoupleBirthdaySection from "@/components/CoupleBirthdaySection";
 
 export default function HomePage() {
   const [count, setCount] = useState(3);
@@ -180,6 +181,7 @@ export default function HomePage() {
           <GallerySection />
           <RotatingCarousel />
           <BlogSection />
+          <CoupleBirthdaySection />
         </motion.main>
       )}
     </>

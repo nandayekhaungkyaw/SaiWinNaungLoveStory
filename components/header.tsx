@@ -8,6 +8,7 @@ const navItems = [
   { name: "Gallery", section: "gallery" },
   { name: "Catering", section: "carousel" },
   { name: "Blog", section: "blog" },
+  { name: "Birthday", section: "birthday" },
 ]
 
 export function Header() {
