@@ -26,7 +26,7 @@ export default function HomePage() {
     "/image/rotate1.jpg",
   ];
 
-  // ✅ PRELOAD IMAGES
+  // 💡 PRELOAD IMAGES (stable + Vercel safe)
   useEffect(() => {
     let loaded = 0;
 
@@ -34,8 +34,13 @@ export default function HomePage() {
       const img = new Image();
       img.src = src;
 
-      img.onload = () => {
+      img.onload = async () => {
+        try {
+          await img.decode(); // ensures real render ready
+        } catch {}
+
         loaded++;
+
         if (loaded === images.length) {
           setImagesLoaded(true);
         }
@@ -43,7 +48,7 @@ export default function HomePage() {
     });
   }, []);
 
-  // ✅ STABLE COUNTDOWN (NO STACKING)
+  // 💡 COUNTDOWN (no stacking)
   useEffect(() => {
     if (!imagesLoaded) return;
     if (count <= 0) return;
@@ -55,7 +60,7 @@ export default function HomePage() {
     return () => clearTimeout(timer);
   }, [count, imagesLoaded]);
 
-  // ✅ CLOSE LOADER AFTER COUNT FINISH
+  // 💡 CLOSE LOADER
   useEffect(() => {
     if (!imagesLoaded) return;
     if (count !== 0) return;
@@ -87,12 +92,20 @@ export default function HomePage() {
         <source src="/music/love-song.mp3" type="audio/mp3" />
       </audio>
 
-      {/* 🎧 MUSIC BUTTON */}
+      {/* 🎧 MUSIC BUTTON (beautiful UI) */}
       <button
         onClick={toggleMusic}
-        className="fixed bottom-5 right-5 z-50 bg-white/20 backdrop-blur-md text-white p-3 rounded-full shadow-lg"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md text-white shadow-lg"
       >
-        {musicOn ? <Volume2 size={20} /> : <VolumeX size={20} />}
+        {musicOn ? (
+          <>
+            <Volume2 size={18} /> Playing
+          </>
+        ) : (
+          <>
+            <VolumeX size={18} /> Muted
+          </>
+        )}
       </button>
 
       {/* 💖 LOADER */}
@@ -111,23 +124,36 @@ export default function HomePage() {
             />
             <div className="absolute inset-0 bg-black/40" />
 
+            {/* Romantic glow */}
+            <div className="absolute w-60 h-60 bg-pink-500/20 blur-3xl rounded-full animate-pulse" />
+
             {/* Content */}
-            <motion.div className="relative text-center text-white">
-              <p className="text-sm tracking-[0.3em] uppercase text-white/70 mb-4">
+            <motion.div className="relative text-center text-white flex flex-col items-center">
+              <p className="text-sm tracking-[0.3em] uppercase text-white/70 mb-6 z-10">
                 Our Love Story
               </p>
 
+              {/* heart animation */}
+              <motion.div
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ repeat: Infinity, duration: 1 }}
+                className="text-5xl mb-4 z-10"
+              >
+                ❤️
+              </motion.div>
+
+              {/* countdown */}
               <motion.h1
                 key={count}
                 initial={{ scale: 0.5, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.4 }}
-                className="text-7xl md:text-9xl font-light transition-all duration-300"
+                className="text-7xl md:text-9xl font-light z-10"
               >
                 {imagesLoaded ? count : "❤"}
               </motion.h1>
 
-              <p className="mt-6 italic text-white/80">
+              <p className="mt-6 italic text-white/80 z-10">
                 “Waiting for our memories to load… 💫”
               </p>
             </motion.div>
