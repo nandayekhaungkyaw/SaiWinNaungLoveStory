@@ -177,7 +177,7 @@ export function HeroSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="flex-1 flex gap-4"
+            className="flex-1 flex gap-4 sm:px-6 md:p-0"
           >
             <motion.div
               initial={{ opacity: 0, y: 30 }}
