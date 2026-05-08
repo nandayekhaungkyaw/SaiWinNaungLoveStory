@@ -83,17 +83,33 @@ export default function HomePage() {
     setMusicOn(!musicOn);
   };
 
+  useEffect(() => {
+  if (showLoader) return;
+
+  const audio = audioRef.current;
+
+  if (!audio) return;
+
+  audio.play()
+    .then(() => {
+      setMusicOn(true);
+    })
+    .catch(() => {
+      // autoplay blocked by browser
+    });
+
+}, [showLoader]);
   return (
     <>
       {/* 🎵 MUSIC */}
       <audio ref={audioRef} loop>
-        <source src="/music/love-song.mp3" type="audio/mp3" />
+        <source src="/music/gfatt.mp3" type="audio/mp3" />
       </audio>
 
       {/* 🎧 MUSIC BUTTON */}
       <button
         onClick={toggleMusic}
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md text-white shadow-lg"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md text-blue-500 shadow-lg"
       >
         {musicOn ? <Volume2 size={18} /> : <VolumeX size={18} />}
       </button>

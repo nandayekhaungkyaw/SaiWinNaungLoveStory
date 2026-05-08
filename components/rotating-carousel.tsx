@@ -9,6 +9,7 @@ const image2='/image/rotate2.JPG'
 const image3='/image/rotate3.JPG'
 const image4='/image/rotate4.JPG'
 const image5='/image/rotate6.JPG'
+const blur='/image/blur.png'
 
 const carouselImages = [
   { src: image1, alt: "Romantic moment 1" },
@@ -198,6 +199,8 @@ export function RotatingCarousel() {
                         src={image.src}
                         alt={image.alt}
                         fill
+                        blurDataURL={blur}
+                        placeholder="blur"
                         className="object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />

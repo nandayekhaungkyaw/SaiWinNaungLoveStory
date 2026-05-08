@@ -9,7 +9,7 @@ const blog3='/image/blog3.JPG'
 const blog4='/image/blog4.JPG'
 const blog5='/image/blog5.JPG'
 const blog6='/image/blog6.JPG'
-
+const blur='/image/blur.png'
 
 const blogPosts = [
   {
@@ -98,6 +98,8 @@ export function BlogSection() {
                   src={post.image}
                   alt={post.title}
                   fill
+                  priority
+                   
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
@@ -160,9 +162,11 @@ export function BlogSection() {
                   src={blogPosts[selectedBlog].image}
                   alt={blogPosts[selectedBlog].title}
                   fill
+                  placeholder="blur"
+  blurDataURL={blur}
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                   <div className="flex items-center gap-4 text-xs mb-3 opacity-80">
                     <span className="bg-[#22c55e] px-3 py-1 rounded-full">{blogPosts[selectedBlog].category}</span>
