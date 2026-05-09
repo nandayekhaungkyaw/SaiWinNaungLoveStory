@@ -10,6 +10,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Volume2, VolumeX } from "lucide-react";
 import CoupleBirthdaySection from "@/components/CoupleBirthdaySection";
+import DownloadPage from "@/components/DownloadPage";
 
 export default function HomePage() {
   const [count, setCount] = useState(3);
@@ -177,11 +178,13 @@ export default function HomePage() {
           className="min-h-screen bg-[#f8f9f5]"
         >
           <Header />
+         
           <HeroSection />
           <GallerySection />
           <RotatingCarousel />
           <BlogSection />
           <CoupleBirthdaySection />
+           <DownloadPage />
         </motion.main>
       )}
     </>
